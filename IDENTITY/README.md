@@ -45,11 +45,11 @@ This script is a Rubrik utility for counting human identities in a customer's Ac
 
 ### Parameters
 
-| Parameter                     | Description                                                                                                | Required | Default Value |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------- | -------- | ------------- |
-| `SpecificDomains`             | An array of fully qualified domain names to audit (e.g., `"corp.domain.local"`). If omitted, all domains in the forest are audited. | No       | (All domains in the forest) |
-| `UserServiceAccountNamesLike` | An array of wildcard patterns to identify service accounts by name (e.g., `"*svc*"`, `"*_bot*"`).             | No       | (None)        |
-| `Mode`                        | The reporting mode. Can be `UserPerOU` for a detailed report or `Summary` for a domain-level summary.        | Yes      | `UserPerOU`   |
+| Parameter                     | Description                                                                                                                           | Required | Default Value |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------| -------- | ------------- |
+| `SpecificDomains`             | An array of fully qualified domain names to audit (e.g., `"corp.domain.local"`). If omitted, all domains in the forest are audited.   | No       | (All domains in the forest) |
+| `UserServiceAccountNamesLike` | An array of wildcard patterns to identify service accounts by name (e.g., `"*svc*"`, `"*_bot*"`).                                     | No       | (None)        |
+| `Mode`                        | The reporting mode. Can be `UserPerOU` for a detailed report or `Summary` for a domain-level summary.                                 | Yes      | `UserPerOU`   |
 
 ### Usage Examples
 
@@ -103,8 +103,8 @@ This script is a Rubrik utility for counting human identities in a customer's En
 
 | Parameter                     | Description                                                                                                | Required | Default Value |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------- | -------- | ------------- |
-| `UserServiceAccountNamesLike` | An array of patterns to identify service accounts by their UPN (e.g., `"svc-"`, `"sa-"`).                     | No       | (None)        |
-| `Mode`                        | The reporting mode. Can be `Full` for a detailed report or `Summary` for an aggregated report.               | Yes      | `Full`        |
+| `UserServiceAccountNamesLike` | An array of patterns to identify service accounts by their UPN (e.g., `"svc-"`, `"sa-"`).                  | No       | (None)        |
+| `Mode`                        | The reporting mode. Can be `Full` for a detailed report or `Summary` for an aggregated report.             | Yes      | `Full`        |
 | `DaysInactive`                | The number of days of inactivity to use when flagging users as inactive.                                   | No       | `180`         |
 | `CheckOwnership`              | A switch parameter that, when present, enables the time-consuming check for application and service principal ownership. | No       | (Not present) |
 
